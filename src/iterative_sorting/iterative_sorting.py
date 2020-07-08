@@ -19,10 +19,10 @@ def selection_sort(arr):
         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
 
     return arr
-# print(arr)
-sortedArr = selection_sort(arr)
-print(arr)
 
+sortedArr = selection_sort(arr)
+print(sortedArr)
+# print(arr)
 # TO-DO:  implement the Bubble Sort function below
 # def bubble_sort(arr):
 #     # Your code here
