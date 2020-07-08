@@ -9,8 +9,13 @@
 - describe the differences between Linear and Binary Search algorithms
   (LINEAR)Linear Search Algorithms take a steady one at a time approach. basically look at every element and decide if it meets for example a 'true' or 'false' criteria. Think of checking movie tickets
   (BINARY)Binary Search Algorithms take a list of sorted data. key here is it is sorted. and halves it. basically finds the median. then looks to which half of the list the target value is. So upfront it will be a lot of moving data. but over time it brackets in the target value and condenses the search length for the target. Which is better for larger scale data sets.
-- define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+
+- define what runtime complexity is:(A)A way to compare arbritrary functions of code., (B)differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+  (B)Various classifications 1)Constant Time O(c) "Best run time."2)Logarithmic Time O(log^n)"Great run time" 3)Linear Time O(n)"Good run time" 4)Log Linear Time O(n log n)"Getting away with it run time" 5)Quadratic Time O(n^c) "aka polynomial. the struggle bus is going to happen" 6) Exponential Time O(c^n) "Worst run time aka stuggle bus lost its breaks going down a mountain."
+
 - distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
+  For smaller data sets you could use linear all day. That would be a runtime of O(n) because it just goes up by one value for every element before it finds its target.
+  If you want to find a target in a large set of data you should use Binary because at first it will have a large load of data. but after it finds the median and halves the data. aka bracketing the target in. then the speed increases because of less data to sort throught. O(log n) Logarithmic
 
 ## Introduction
 
