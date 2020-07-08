@@ -7,6 +7,8 @@
 ## Objectives
 
 - describe the differences between Linear and Binary Search algorithms
+  (LINEAR)Linear Search Algorithms take a steady one at a time approach. basically look at every element and decide if it meets for example a 'true' or 'false' criteria. Think of checking movie tickets
+  (BINARY)Binary Search Algorithms take a list of sorted data. key here is it is sorted. and halves it. basically finds the median. then looks to which half of the list the target value is. So upfront it will be a lot of moving data. but over time it brackets in the target value and condenses the search length for the target. Which is better for larger scale data sets.
 - define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
 - distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
 
@@ -159,7 +161,7 @@ So the total space complexity for this algorithm is:
 Again, compare to the `O(1)` space complexity of the initial iterative solution.
 
 In some languages, notably
-[Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) and other
+[Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>) and other
 [functional programming
 languages](https://en.wikipedia.org/wiki/Functional_programming), you can write
 recursive solutions with `O(1)` space complexity. These languages take advantage
