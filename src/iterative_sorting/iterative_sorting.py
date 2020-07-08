@@ -1,30 +1,30 @@
 # arr = [2,5,8,12,18,16,3,7,20,10]
 # # TO-DO: Complete the selection_sort() function below
-# def selection_sort(arr):
-# # This is the loop that says we will go through each item in our collection, one at a time.
-#     # outer loop
-#     for i in range(0, len(arr) - 1):
-#         cur_index = i
-#         smallest_index = cur_index
-#         #inner loop
-# #we need to loop through all the items that come after the current index to find the one with the lowest value. We do this with another for loop. With each item, we check if it is smaller than the current smallest and replace the smallest index if so.
-#         for j in range(cur_index + 1, len(arr)):
-# # At the end, before we increment our outer loop, we swap the item that is located in the current index with the smallest item that we located during our loop.
-#             if arr[j] < arr[smallest_index]:
-#                 smallest_index = j
+def selection_sort(arr):
+# This is the loop that says we will go through each item in our collection, one at a time.
+    # outer loop
+    for i in range(0, len(arr) - 1):
+        cur_index = i
+        smallest_index = cur_index
+        #inner loop
+#we need to loop through all the items that come after the current index to find the one with the lowest value. We do this with another for loop. With each item, we check if it is smaller than the current smallest and replace the smallest index if so.
+        for j in range(cur_index + 1, len(arr)):
+# At the end, before we increment our outer loop, we swap the item that is located in the current index with the smallest item that we located during our loop.
+            if arr[j] < arr[smallest_index]:
+                smallest_index = j
 
-#         # TO-DO: swap
-#         # Your code here
-#         arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
+        # TO-DO: swap
+        # Your code here
+        arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
 
-#     return arr
+    return arr
 # #runtime complexity of O(n^2)
 # sortedArr = selection_sort(arr)
 # print(sortedArr)
 # # print(arr)
 
 # TO-DO:  implement the Bubble Sort function below
-arr = [80,95,84,92,91,87,88,99,81,96]
+# arr = [80,95,84,92,91,87,88,99,81,96]
 
 def bubble_sort(arr):
     # Your code here #declaring the arr len as n and to pass as the sort len
@@ -39,8 +39,8 @@ def bubble_sort(arr):
                 arr[j], arr[j+1] = arr[j+1], arr[j]
 
     return arr
-new_bubble = bubble_sort(arr)
-print(new_bubble)
+# new_bubble = bubble_sort(arr)
+# print(new_bubble)
 '''
 STRETCH: implement the Counting Sort function below
 
