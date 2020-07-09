@@ -25,7 +25,6 @@ def binary_search(arr, target):
     # print(end)
     while end >= start:
         #getting the middle point
-        # middle_index = start + (end - 1) // 2
         middle_index = (start + end) // 2
         # print(middle_index)
         #compare the value in the middle with target
