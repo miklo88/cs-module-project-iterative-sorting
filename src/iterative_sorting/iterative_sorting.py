@@ -57,9 +57,13 @@ showed up, we can construct a sorted set of the input data from the
 buckets. 
 
 What is the time and space complexity of the counting sort algorithm?
+## O(n+k) worst case O(k)
+
 '''
 # def counting_sort(arr, maximum=None):
 #     # Your code here
 
 
 #     return arr
+# stretch = counting_sort(arr)
+# print(stretch)
