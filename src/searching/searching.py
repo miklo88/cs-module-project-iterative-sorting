@@ -10,30 +10,38 @@ def linear_search(arr, target):
 
     return -1   # not found
 
-# print(linear_search(arr, target))
+# linear = linear_search(arr, target)
+# print(linear)
 
 # # Write an iterative implementation of Binary Search
-# def binary_search(arr, target):
-#     # Your code here
-#     start = arr[0]
-#     end = (len(arr) - 1)
+# arr = [-5,-3,-2,-1,6,8,9,7,15,56,55,78]
+# arr = [-9, -8, -6, -4, -3, -2, 0, 1, 2, 3, 5, 7, 8, 9]
+# target = 8
+def binary_search(arr, target):
+    # Your code here
+    start = 0
+    # print(start)
+    end = (len(arr) -1)
+    # print(end)
+    while end >= start:
+        #getting the middle point
+        # middle_index = start + (end - 1) // 2
+        middle_index = (start + end) // 2
+        # print(middle_index)
+        #compare the value in the middle with target
+        #if the middle value is the same as target return target. 
+        if arr[middle_index] == target:
+            return middle_index
+            #move start or end index closer to one another, and shrink our area of search. aka bracketing
+        else:
+            if target < arr[middle_index]:
+                end = middle_index - 1
+            if target > arr[middle_index]:
+                start = middle_index + 1
+    
+    return -1  # not found
 
-#     found = False
-#     while end >= start and not found:
-#         #getting the middle point
-#         middle_index = (start + end) // 2
-#         #compare the value in the middle with target
-#         #if the middle value is the same as target, set found to True
-#         if arr[middle_index] == target:
-#             found = True
-#             #move start or end index closer to one another, and shrink our area of search. aka bracketing
-#         else:
-#             if target < arr[middle_index]:
-#                 end = middle_index - 1
-#             if target > arr[middle_index]:
-#                 start = middle_index + 1
-#     # return found
-#     return -1  # not found
+# binary = binary_search(arr, target)
+# print(binary)
 
-# random_nums.sort()
-# print(binary_search(random_nums, num_to_find))
+
