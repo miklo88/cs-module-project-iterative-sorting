@@ -25,11 +25,21 @@ looking like i have a nested for loop
 '''
 
 arr = [[8, 4], [90, -1, 3], [9, 62], [-7, -1, -56, -6], [201], [76, 18]]
-a = []
-c = []
-for i in arr:
-    a.append(min(i)) 
-    # a = min(i) 
-    # c.append(sum(a))
-print(sum(a))
+# a = []
+# c = []
+# for i in arr:
+#     a.append(min(i)) 
+#     # a = min(i) 
+#     # c.append(sum(a))
+# print(sum(a))
 # print(c)
+
+# UPDATED CODE. FINDING MORE WAYS TO REACH SOLUTION.
+def min_sum(arr):
+    a = 0
+    for i in arr:
+        a += min(i)
+    print(a)
+    # return sum(a)
+minimum = min_sum(arr)
+
